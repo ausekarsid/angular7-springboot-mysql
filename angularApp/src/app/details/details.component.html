@@ -1,0 +1,30 @@
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h2>Employee List</h2>
+      </div>
+      <div class="panel-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>user_id</th>
+              <th>username</th>
+              <th>detail</th>
+              <th>email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let detail of details | async">
+              <td>{{detail.user_id}}</td>
+              <td>{{detail.username}}</td>
+              <td>{{detail.detail}}</td>
+              <td>{{detail.email}}</td>
+              <td>
+                <button (click)="getUserDetail(detail.user_id)" class="btn btn-info" style="margin-left: 10px">Fetch</button>
+                <button (click)="updateDetails(detail.user_id)" class="btn btn-warning margin-left">Update Details</button>
+                <button (click)="deleteDetails(detail.user_id)" class="btn btn-danger margin-left">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
