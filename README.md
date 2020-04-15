@@ -4,6 +4,9 @@ angular7-springboot-mysql-basic
 Angular 7 is used to run AngularApp
 Spring boot with IDE is used to run CRUD
 
+Check and correct the correct port numbers for mysql, java application and angular app
+
+
 Use the following for the mysql database config.
 
 use db;
