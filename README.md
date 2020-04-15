@@ -12,6 +12,7 @@ Use the following for the mysql database config.
 use db;
 
 CREATE TABLE user (
+
 user_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 
 username VARCHAR(30),
